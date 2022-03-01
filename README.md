@@ -1,2 +1,3 @@
-# curso--desarrollo-web-frontend-react
-Repositorio creado durante el cursado de la carrera Desarrollo Web Front End con React, dictada por CODERHOUSE
+# Carrera de desarrollo Frontend React
+### CODERHOUSE
+Repositorio creado durante el cursado de la carrera de desarrollo Frontend React, dictada por CODERHOUSE.
