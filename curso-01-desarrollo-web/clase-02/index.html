@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 02</title>
+</head>
+<body>
+    <!-- tipos de listas -->
+    <!-- LISTAS ORDENADAS, siguen un orden y por lo general se pueden encontrar en los pasos de registros de alguna página -->
+    <!-- <ol>
+        <li>Paso 1</li>
+        <li>Paso 2</li>
+    </ol> -->
+    <!-- LISTAS DESORDENADAS, estas basicamente no siguen un orden -->
+    <!-- <ul>
+        <li>Item de lista</li>
+        <li>Otro item</li>
+    </ul> -->
+
+    <!-- podemos anidar una lista dentro de otra -->
+    <!-- <ul>
+        <li>Cómo comprar productos
+            <ol>
+                <li>Paso 1</li>
+                <li>Paso 2</li>
+            </ol>
+        </li>
+        <li>Cómo recibir tu producto</li>
+    </ul> -->
+
+    <!-- etiqueta de lista (desordenada), para estructurar lo que es un menú de navegación con etiqueta NAV -->
+
+    <!-- creamos un menú -->
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Blog</li>
+            <li>Inicia tu aventura</li>
+            <li>
+                <a href="pages/instrucciones.html">
+                    Instrucciones
+                </a>
+            </li>
+            <li>Acerca de</li>
+        </ul>
+    </nav>
+
+    <!-- enlaces -->
+    <!-- 
+        - ENLACE RELATIVO, apuntan a documentos dentro del proyecto, por ejemplo otro html -->
+        
+    <!--    
+        - ENLACES ABSOLUTOS, apuntan a una página externa a nuestro proyecto -->
+        <a href="https://www.coderhouse.com" target="_blank">
+            ir a coderhouse
+        </a>
+    <!--  
+        - ENLACES INTERNOS, estos básicamente apuntan a una parte del mismo html
+    -->
+    <div>
+        <a href="#irFooter">
+            ir al footer
+        </a>
+    </div>
+
+    <footer id="irFooter">
+        <p>Todos los derechos reservados</p>
+    </footer>
+
+    <!-- multimedia -->
+    <img src="img/srburns.jpeg" alt="imagen del sr burns">
+
+    <!-- formularios -->
+
+    <form action="">
+        <fieldset>
+            <legend>
+                Formulario de contacto
+            </legend>
+            <div>
+                <label for="nombre">Completa tu nombre</label>
+                <input type="text" name="nombre" placeholder="acá va tu nombre">
+            </div>
+            <div>
+                <label for="email">Completa tu Email</label>
+                <input type="email" name="email" placeholder="acá va tu email">
+            </div>
+            <div>
+                <label for="pais">Selecciona tu país</label>
+                <select name="pais" id="">
+                    <option value="argentina">argentina</option>
+                    <option value="españa">españa</option>
+                </select>
+            </div>
+            <div>
+                <label for="genero">
+                    Elige tu género
+                </label>
+                <br>
+                <input type="radio" name="genero" value="hombre"> hombre
+                <br>
+                <input type="radio" name="genero" value="mujer"> mujer
+                <br>
+                <input type="radio" name="genero" value="no-binario"> no-binario
+            </div>
+            <div>
+                <input type="submit" value="enviar el form" name="" id="">
+                <input type="reset" value="borrar todo">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>
