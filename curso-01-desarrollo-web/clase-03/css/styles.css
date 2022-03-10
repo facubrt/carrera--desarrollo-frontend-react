@@ -1,0 +1,72 @@
+/* Comentarios en CSS */
+/* Tercera forma de aplicar estilos */
+
+/* h1 {
+    color: green;
+} */
+
+/* TRES FORMAS DE APLICAR ESTILOS A UNA MISMA ETIQUETA
+
+- PRIMER FORMA. Mediante el nombre de la etiqueta (p, h1, etc) */
+/* p {
+    color: red;
+} */
+
+/* SELECTORES. Id y Class. Los ID son unicos y por lo general se dejan reservados para JS. Las CLASS nos sirven para seleccionar etiquetas a las que darles formato en CSS */
+
+/* - SEGUNDA FORMA.  Mediante el id*/
+/* #primer-parrafo {
+    color: yellow;
+} */
+
+/* - TERCERA FORMA.  Mediante el class */
+/* .parrafo-main {
+    color:blueviolet;
+} */
+
+/* IMPORTANCIA DE LOS SELECTORES
+
+POR ORDEN DE IMPORTANCIA (DE MENOR A MAYOR)
+
+- ESTILO APLICADO POR ETIQUETA
+- ESTILO APLICADO POR CLASS
+- ESTILO APLICADO POR ID
+- ESTILO APLICADO INLINE
+
+*/
+
+/* a la hora de escribir class o id, nombre de archivos, etc es necesario utilizar camelCase */
+
+/* algunas propiedades */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url('../img/srburns.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    color: #82E0AA;
+    text-align: center;
+}
+
+/* ruta de especificidad (también se puede trabajar con clase) */
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    color: pink;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    color: #82E0AA;
+}
