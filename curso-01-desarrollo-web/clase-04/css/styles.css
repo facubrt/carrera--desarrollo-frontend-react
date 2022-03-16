@@ -1,0 +1,79 @@
+/* aplicamos reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* PROPIEDADES DE BOX MODEL 
+    CONTENIDO, lo que está dentro de la caja (por ejemplo, texto, contenido multimedia)
+    RELLENO, espacio interno entre el contenido y el borde de la caja
+    MARGEN, espacio externo entre la caja y otra caja
+
+*/
+
+/* PROPIEDAD DEL BORDE */
+
+
+h2 {
+    background-color: green;
+    padding: 10px 30px;
+    margin: 10px 30px;
+    text-align: center;
+    border: 2px solid black;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+a {
+    background-color: red;
+    display: block;
+}
+
+/* PROPIEDAD ALTO Y ANCHO */
+
+.caja {
+    margin-top: 10px;
+    background-color: blueviolet;
+    color:black;
+    width: 300px;
+    height: 100px;
+    overflow: scroll;
+}
+
+.menu {
+    background-color: turquoise;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.menu li{
+    background-color: brown;
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+}
+
+.menu .none {
+    display: none;
+}
+
+.itemRelative {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.itemAbsolute {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.itemFixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
