@@ -1,0 +1,91 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+propiedades del padre
+.padre {
+    display: flex;
+    height: 100vh;
+    background-color: black;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+
+    /* esta propiedad combina la dirección con el wrap */
+
+    /* flex-flow: column wrap; */
+    /* justify-content centra en el eje principal */
+    /* justify-content: center; */
+    /* align-items centra en el eje cruzado */
+    /* align-items: center;  */
+    /* align-content: flex }*/
+/*
+.hijos {
+    background-color: violet;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+*/
+/*
+.hijos h2 {
+    text-align: center;
+}*/
+
+.divBody {
+    background-color: black;
+    height: 100vh;
+}
+
+header {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: pink ;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+
+}
+
+nav ul li {
+    background-color: teal;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.contenedor {
+    padding: 10px;
+    display: flex;
+}
+
+aside {
+    flex: 20%;
+    background-color: royalblue;
+}
+
+main {
+    flex: 80%;
+    background-color: green;
+}
+
+footer {
+    background-color: slategray;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 10%;
+}
+
+footer h4 {
+    padding: 30px;
+    text-align: center;
+}
