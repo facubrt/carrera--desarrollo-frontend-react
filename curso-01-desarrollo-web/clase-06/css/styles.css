@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* propiedades del padre */
+
+.padre {
+    height: 600px;
+    display: grid;
+    /* definiendo columnas como máximo 12 columnas
+    MEDIDAS
+    px nos da la medida expresada en pixeles
+    fr unidad de medida fraction (parte la pantalla en la cantidad total de fracciones y después toma los números de fracción que indicamos para cada columna / fila). Puede no ser entero
+    % nos da la medida expresada en porcentaje de pantalla
+
+    */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+
+    gap: 10px;
+    /* column-gap: 10px */
+    /* row-gap: 10px */
+
+    /* definiendo filas 
+    grid-template-rows: 100px auto; */
+}
+
+/* propiedades de los hijos */
+.hijoUno {
+    background-color: beige;
+}
+
+.hijoDos {
+    background-color:burlywood;
+}
+
+.hijoTres {
+    background-color:cadetblue;
+}
+
+.hijoCuatro {
+    background-color: cornflowerblue;
+}
+
+/* ejemplo dos */
+.ejemplo {
+    height: 700px;
+    background-color:burlywood;
+    /* justify-items distribuye los elementos en el eje horizontal */
+    /* align-items distribuye en el eje vertical */
+    display: grid;
+    grid-template-columns: auto auto;
+    /* propiedad para alinear horizontalmente */
+    justify-items: center;
+    /* para alinear verticalmente */
+    align-items: center;
+}
+
+.imagen-1 {
+    justify-self: start;
+    align-self: start;
+}
+
+/* propiedades del padre */
+
+.contenedor {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr ;
+    grid-template-areas: "header header header header"
+                            "aside main main main"
+                            "aside section section2 section3"
+                            "aside footer footer footer";
+    gap: 10px;
+}
+
+/* propiedades de las áreas */
+header{
+    grid-area: header;
+    background-color: #ED6A5A;
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   nav ul {
+       list-style: none;
+   }
+
+   nav ul li{
+       display: inline-block;
+       background-color: burlywood;
+       font-size: 20px;
+       border: 1px solid black;
+       padding: 5px;
+
+   }
+
+   main{
+       grid-area: main;
+       background-color: #9BC1BC ;
+   }
+   
+   section{
+       grid-area: section;
+       background-color: #5CA4A9;
+      }
+   
+   .section2{
+    grid-area: section2;
+       background-color:#E6EBE0;
+   }
+   
+   .section3{
+    grid-area: section3;
+       background-color: #c0c4bc;
+   }
+   
+   aside{
+    grid-area: aside;
+       background-color: #A1C8C5;
+   }
+   
+   footer{
+        grid-area: footer;
+       background-color: #F1AE8B;
+      }
+   
