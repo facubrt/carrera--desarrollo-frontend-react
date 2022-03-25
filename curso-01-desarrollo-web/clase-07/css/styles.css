@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2 unidades de medida 
+    em -> no siempre 1em = 16px. Es una unidad relativa al tamaño que contiene la etiqueta padre más próxima. Por defecto body tiene font-size: 16px;
+    Si tengo un div con font-size: 30px, y tengo un h1 hijo con font-size: 1em, su valor será 30px. Si es 2em, será 60px
+
+    rem -> unidd relativa al tamaño de html 1rem = 16px
+*/
+
+/* body {
+    font-size: 16px;
+}
+
+div {
+    font-size: 60px;
+}
+
+header h1 {
+    font-size: 1em;
+}
+
+div p {
+    font-size: 0.4em;
+}
+
+div h2 {
+    font-size: 1rem;
+}
+
+main p {
+    font-size: 1rem;
+} */
+
+/* MEDIA QUERYS */
+
+body {
+    background-color: #F8CED8;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 1rem;
+    padding: 0.5rem;
+    list-style: none;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+}
+
+.mainNosotros {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "mainP mainP"
+                         "imagen1 imagen2"
+                         "imagen3 imagen4"
+                         "parrafo parrafo";
+    justify-content: center;
+}
+
+.sectionNosotros {
+    display: none;
+}
+
+.mainP {
+    grid-area: mainP;
+    text-align: center;
+}
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+}
+
+.imagen4 {
+    grid-area: imagen4;
+}
+
+.parrafo {
+    grid-area: parrafo;
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+}
+
+/* MEDIA QUERYS */
+@media only screen and (min-width: 600px) {
+    .mainNosotros {
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "mainP mainP mainP mainP"
+                             "img img img img"
+                             "imagen1 imagen2 imagen3 imagen4"
+                             "parrafo parrafo parrafo parrafo";
+        justify-content: center;
+    }
+
+    .sectionNosotros {
+        grid-area: img;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainP, .parrafo {
+        font-size: 1.3rem;
+    }
+
+    .imagen1, .imagen2, .imagen3, .imagen4 {
+        margin: 1rem;
+    }
+
+    main div img {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .mainNosotros {
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "mainP mainP img img"
+                             "imagen1 imagen2 imagen3 imagen4"
+                             "parrafo parrafo parrafo parrafo";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionNosotros {
+        grid-area: img;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainP, .parrafo {
+        font-size: 1.3rem;
+    }
+
+    .imagen1, .imagen2, .imagen3, .imagen4 {
+        margin: 1rem;
+    }
+
+
+}
