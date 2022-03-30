@@ -1,0 +1,159 @@
+
+body {
+    background-color: #F8CED8;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 1rem;
+    padding: 0.5rem;
+    list-style: none;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+}
+
+nav ul li:hover {
+    background-color: #F2b1c0;
+    transform: scale(1.2);
+    box-shadow: 2px 3px pink;
+}
+
+.mainNosotros {
+    height: 80vh;
+    display: grid;
+    grid-template-areas: "mainP mainP"
+                         "imagen1 imagen2"
+                         "imagen3 imagen4"
+                         "parrafo parrafo";
+    justify-content: center;
+}
+
+.sectionNosotros {
+    display: none;
+}
+
+.mainP {
+    grid-area: mainP;
+    text-align: center;
+}
+
+.imagen1 {
+    grid-area: imagen1;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+}
+
+.imagen4 {
+    grid-area: imagen4;
+}
+
+/* transformaciones img */
+/* 
+img {
+    transition: 2s;
+}
+
+img:hover {
+    transform: scale(1.5);
+} */
+
+.parrafo {
+    grid-area: parrafo;
+    text-align: center;
+}
+
+footer p{
+    text-align: center;
+}
+
+/* EJEMPLO DE ANIMACIONES */
+.imgLuna {
+    width: 60%;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 100s;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* MEDIA QUERYS */
+@media only screen and (min-width: 600px) {
+    .mainNosotros {
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "mainP mainP mainP mainP"
+                             "img img img img"
+                             "imagen1 imagen2 imagen3 imagen4"
+                             "parrafo parrafo parrafo parrafo";
+        justify-content: center;
+    }
+
+    .sectionNosotros {
+        grid-area: img;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainP, .parrafo {
+        font-size: 1.3rem;
+    }
+
+    .imagen1, .imagen2, .imagen3, .imagen4 {
+        margin: 1rem;
+    }
+
+    main div img {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .mainNosotros {
+        height: 80vh;
+        display: grid;
+        grid-template-areas: "mainP mainP img img"
+                             "imagen1 imagen2 imagen3 imagen4"
+                             "parrafo parrafo parrafo parrafo";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sectionNosotros {
+        grid-area: img;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainP, .parrafo {
+        font-size: 1.3rem;
+    }
+
+    .imagen1, .imagen2, .imagen3, .imagen4 {
+        margin: 1rem;
+    }
+}
