@@ -1,0 +1,32 @@
+/* OPERACIONES */
+h2 {
+  font-size: 410px; }
+
+/* LISTAS */
+h3 {
+  color: green; }
+
+/* MIXIN */
+main {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center; }
+
+/* MAPAS */
+.standard {
+  background-color: black; }
+
+.premium {
+  border: 1px solid blue; }
+
+header {
+  padding: 30px;
+  margin: 40px; }
+
+header {
+  display: flex;
+  justify-content: center; }

@@ -1,0 +1,20 @@
+@import "utilities/variables";
+@import "layout/contacto";
+@import "utilities/practica";
+
+@mixin flex-dos {
+    display: flex;
+    justify-content: center;
+}
+
+%estilos {
+    padding: 30px;
+    margin: 40px;
+}
+
+header {
+
+    @include flex-dos;
+    @extend %estilos;
+    
+};

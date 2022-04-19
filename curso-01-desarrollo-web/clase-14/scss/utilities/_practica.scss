@@ -1,0 +1,72 @@
+/* OPERACIONES */
+
+$med-principal: 450px;
+
+h2 {
+    font-size: $med-principal - 40px;
+
+}
+
+/* LISTAS */
+$colores: red, yellow, pink, black, green;
+
+h3 {
+    color: nth($colores, 5);
+}
+/* MIXIN */
+@mixin size ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center
+}
+
+main {
+    @include size(500px, 500px);
+    @include flex;
+}
+
+/* MAPAS */
+
+$standard: (
+    //key - valor
+    color-standard: #f1f1f1,
+    bg-standard: black,
+    border-standard: 1px solid green,
+);
+
+$premium: (
+    //key - valor
+    color-premium: pink,
+    bg-premium: yellow,
+    border-premium: 1px solid blue,
+);
+
+.standard{
+    background-color: map-get($map: $standard, $key: bg-standard)
+}
+
+.premium {
+    border: map-get($map: $premium, $key: border-premium);
+}
+
+%border {
+    border-radius: 40px;
+    padding: 28px;
+}
+
+@mixin condicion($color) {
+    background-color: $color;
+    /* condicional */
+    @if $color == orange {
+        border: 1px solid black;
+    } @else {
+        border: 2px solid pink;
+    }
+}
