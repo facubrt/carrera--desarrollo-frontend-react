@@ -1,0 +1,8 @@
+#popup-mensaje {
+    opacity: 0,
+
+}
+
+#popup-active {
+    display: block;
+}
