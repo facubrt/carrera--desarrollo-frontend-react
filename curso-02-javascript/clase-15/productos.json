@@ -1,0 +1,18 @@
+[
+    {
+        "producto": "Leche",
+        "precio": 2000
+    },
+    {
+        "producto": "Pan",
+        "precio": 2000
+    },
+    {
+        "producto": "Arroz",
+        "precio": 2000
+    },
+    {
+        "producto": "Queso",
+        "precio": 2000
+    }
+]
